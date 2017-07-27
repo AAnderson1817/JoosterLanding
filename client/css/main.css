@@ -1,0 +1,283 @@
+@font-face {
+  font-family: Banana;
+  src: url(/fonts/banana-reg.otf);
+}
+
+body {
+  font-family: Banana;
+  padding: 0;
+}
+
+.main-cta {
+  margin-top: 18vh;
+  margin-bottom: 4.125vh;
+  font-size: 42px;
+}
+/* BEGIN EDITING BLOCK*/
+
+#success-panel {
+  position:absolute;
+  background-color: #F4E764;
+  -webkit-transition: all 1.5s; // Chrome
+  -moz-transition: all 1.5s; // Mozilla
+  -o-transition: all 1.5s; // Opera
+  transition: all 1.5s;
+<<<<<<< HEAD
+  display:none;
+=======
+  display: none;
+>>>>>>> d0791dd4518f7cf60122f9a314afaf99e599cb32
+}
+
+.success-text {
+  font-size: 42px;
+  width: 500px;
+  top: 22.5%;
+  text-align:center;
+}
+
+.success-exit {
+  position:relative;
+  font-size: 40px;
+  left: 95%;
+  top: 0;
+  cursor: pointer;
+}
+
+.slidein {
+  right: 0%;
+}
+
+.slideout {
+  right: 50%;
+}
+.hidden{
+  width:0;
+}
+.ztop{
+  z-index: 1;
+}
+.zbot{
+  z-index: -1;
+}
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+.dropdown{
+  cursor:pointer;
+}
+/* END EDITING BLOCK */
+.cloud {
+  position: absolute;
+}
+
+.main-logo {
+  margin-top: 20vh;
+}
+
+.bottomline {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+}
+
+.joinline {
+  margin-top: 10vh;
+  margin-bottom: 5.5vh;
+}
+
+.signupline {
+  margin-top: 4.125vh;
+}
+
+.btn-container {
+  margin-top: 16.13vh;
+}
+
+.full-height {
+  height: 100vh;
+  position: relative;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.landing {
+  background-color: #5be76b;
+  overflow: hidden;
+}
+
+.submit-btn {
+  height: 42px;
+  background: #fff;
+  border: solid 1px #000000;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  height: 42px;
+  border: 0;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.65);
+}
+
+.selector {
+  height: 42px;
+  border: 0;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.65);
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+  min-width: 177px;
+}
+
+.select-caret {
+  float: right;
+}
+
+.select-container {
+
+}
+
+.contact-btn {
+  height: 42px;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.cloud-one {
+  top: 10.625%;
+  animation: cloudone 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-two {
+  top: 22%;
+  animation: cloudtwo 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-three {
+  top: 30%;
+  animation: cloudthree 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloudone {
+  from {
+    right: -10%;
+  } to {
+    right: 100%;
+  }
+}
+
+@keyframes cloudtwo {
+  from {
+    left: -10%;
+  } to {
+    left: 100%;
+  }
+}
+
+@keyframes cloudthree {
+  from {
+    right: -30%;
+  } to {
+    right: 120%;
+  }
+}
+
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .mobile-cta {
+    margin-top: 20vh;
+    color: #fff;
+    line-height: 1.38;
+    font-size: 35px;
+    display: block;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .main-cta {
+    display: none;
+  }
+
+  .contact-btn {
+    width: 40%;
+  }
+
+  .submit-btn {
+    width: 40%;
+  }
+
+}
